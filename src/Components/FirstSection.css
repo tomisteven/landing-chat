@@ -1,0 +1,57 @@
+.first-section {
+    background-image: url('../background.jpg'); /* Ruta de la imagen de fondo */
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  .content {
+    max-width: 500px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+
+  .subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .start-button {
+    background: #fff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-left {
+    animation: slideInLeft 1.5s ease forwards;
+  }
