@@ -3,17 +3,23 @@
   padding: 60px 0;
   opacity: 0;
   transform: translateX(300px);
-  transition: opacity 1.5s ease, transform 1.7s ease;
-  background: linear-gradient(45deg, #ff9a9da7, #fad0c498, #fad0c473, #ffd1ff84);
+  transition: opacity .5s ease, transform 1.5s ease;
+  background: linear-gradient(45deg, #59523b20, #7570673d, #f8f8f8);
   background-size: 300% 300%;
-  animation: gradientAnimation 10s ease infinite;
+  animation: gradientAnimation 25s infinite;
 }
 @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
     }
-    50% {
+    25% {
       background-position: 100% 50%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    75% {
+      background-position: 0% 50%;
     }
     100% {
       background-position: 0% 50%;
@@ -30,12 +36,12 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
+  color: #000000;
   margin: 0 auto;
 }
 
 .second-text-container {
   max-width: 450px;
-
   padding-right: 40px;
 }
 
@@ -70,7 +76,7 @@
 .animate-from-right {
   transform: translateX(100%);
   opacity: 0;
-  transition: transform 2s ease, opacity 0.5s ease;
+  transition: transform 2s ease, opacity 2s ease;
 }
 
 .animate-from-right.animate {

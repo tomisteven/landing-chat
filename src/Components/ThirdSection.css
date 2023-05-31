@@ -1,0 +1,63 @@
+.third-section {
+  padding: 10px 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  position: relative;
+  width: 23%;
+  transform: translateX(-100%);
+  transition: transform 1.4s linear;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.355);
+  border-radius: 10px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.subtitle {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.third-section.animate .image-container {
+  transform: translateX(0);
+}
+
+.third-section.animate .image-container:nth-child(1) .overlay,
+.third-section.animate .image-container:nth-child(2) .overlay,
+.third-section.animate .image-container:nth-child(4) .overlay,
+.third-section.animate .image-container:nth-child(3) .overlay {
+  opacity: 1;
+
+}
+
+
+
+
+.title-tree {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.558);
+  color: rgba(0, 0, 0, 0.756);
+  margin-bottom: 50px;
+  font-size: 30px;
+}

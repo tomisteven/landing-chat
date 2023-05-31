@@ -3,7 +3,7 @@ import './FirstSection.css';
 
 const FirstSection = () => {
     useEffect(() => {
-        const title = document.querySelector('.title');
+        const title = document.querySelector('.title-f');
         const subtitle = document.querySelector('.subtitle');
         const startButton = document.querySelector('.start-button');
 
@@ -23,7 +23,7 @@ const FirstSection = () => {
   return (
     <section className="first-section">
       <div className="content">
-        <h1 className="title">Título de la primera sección</h1>
+        <h1 className="title-f">Título de la primera sección</h1>
         <h2 className="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, eveniet vero? Ea tempora expedita ipsa. Molestias, doloribus animi iste ipsa impedit aliquid maxime error officiis! Consequuntur nulla doloribus quo dolorem?</h2>
         <button className="start-button">Comenzar</button>
       </div>
