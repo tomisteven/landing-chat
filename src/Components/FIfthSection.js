@@ -53,7 +53,7 @@ const FifthSection = () => {
   }, [brands.length]);
 
   return (
-    <section className="fifth-section">
+    <section id='recommendations' className="fifth-section">
       <div className="carousel" ref={carouselRef}>
         <h2 className='title-marcas'>Nuestras Marcas mas Reconocidas</h2>
         <div className="slide-wrapper">

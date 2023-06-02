@@ -3,6 +3,22 @@ import './Header.css';
 import logo from '../DIGITAL_CODE__1_-removebg-preview.png';
 
 const Header = () => {
+
+  const scollEvent = (e) => {
+
+    const position = window.pageYOffset;
+    const header = document.querySelector('.header');
+    if (position > 100) {
+      header.classList.add('header-scroll');
+    }
+    else {
+      header.classList.remove('header-scroll');
+    }
+  }
+
+  window.addEventListener('scroll', scollEvent);
+
+
   return (
     <header className="header">
       <nav className="navbar">

@@ -33,7 +33,7 @@ const ThirdSection = () => {
   }, []);
 
   return (
-    <section className="third-section" ref={sectionRef}>
+    <section id='services' className="third-section" ref={sectionRef}>
 <h2 className="title-tree">Nuestros Servicios</h2>
       <div className="container">
         <div className="image-container">

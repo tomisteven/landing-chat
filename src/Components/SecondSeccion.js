@@ -30,7 +30,7 @@ const SecondSection = () => {
   }, []);
 
     return (
-      <section className="second-section" ref={sectionRef}>
+      <section id='about' className="second-section" ref={sectionRef}>
         <div className="second-content">
           <div className="second-text-container">
             <h2 className="second-title">Sobre Nosotros</h2>

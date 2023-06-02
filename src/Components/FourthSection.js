@@ -34,7 +34,7 @@ const FourthSection = () => {
   }, []);
 
   return (
-    <section className="fourth-section" ref={sectionRef}>
+    <section id='products' className="fourth-section" ref={sectionRef}>
       <div className="container">
         <div className='cont-title-four'>
           <h2 className="title-four">Descubre Nuestros Productos</h2>
